@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "post",
+    "description": "This is The First Content Types"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "default": "",
+      "type": "text"
+    },
+    "cover": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
